@@ -1,0 +1,119 @@
+html,* {
+    cursor: url('img/cursor.png'), auto;
+    letter-spacing : 2px;
+    line-height: 25px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    color:#212529;
+    font-family: 'Press Start 2P',cursive;
+    font-size: 18px;
+}
+
+.homeDiv {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#212529;
+    cursor: url('img/cursor-click.png'), auto;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+li {
+    list-style: none;
+}
+
+.titleText::before {
+    content: '#';
+    color:rgb(59, 121, 255);
+}
+
+
+/*  ---------------- HEADER ----------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+/* menu nav */
+.topnav {
+    overflow: hidden;
+    align-self: flex-end;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #F1C32E;
+    color: white;
+}
+
+/* ---------------- HOME : ABOUT  ----------------*/
+.aboutText {
+    width: 50%;
+    padding :1.2rem;
+    background: #212529;
+}
+
+.aboutText p {
+    font-weight: 100;
+}
+
+
+
+/* ---------------- HOME :WEEKLY ---------------- */
+img {
+    margin: auto 0;
+}
+
+.followDiv img {
+    height: 30px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+footer summary {
+    margin: 0 100px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
