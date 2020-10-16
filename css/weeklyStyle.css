@@ -1,3 +1,21 @@
+/*  ---------------- HEADER ----------------*/
+.topnav a:last-child {
+    color: black;
+}
+
+.topnav a:last-child:hover {
+    color: #F1C32E;
+}
+
+.topnav a:first-child {
+    color: white;
+}
+
+.topnav a:first-child:hover {
+    color: white;
+}
+
+/*  ---------------- SECTION ----------------*/
 section div {
     background-color: #212529;
 }
@@ -43,8 +61,11 @@ section p {
     justify-content: center;
 }
 
-/* WEEK 02 */
+/*  ---------------- WEEK 02 ----------------*/
 
 #week01 p {
     color: rgb(185, 241, 255);
 }
+
+
+
