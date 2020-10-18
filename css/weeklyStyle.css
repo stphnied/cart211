@@ -61,6 +61,21 @@ section p {
     justify-content: center;
 }
 
+
+.readings li {
+    list-style: inherit;
+    color:white;
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+.readings li a{
+    color:white;
+}
+
+.readings li a:hover {
+    color: rgb(209, 121, 89);
+}
+
 /*  ---------------- WEEK 02 ----------------*/
 
 #week01 p {
