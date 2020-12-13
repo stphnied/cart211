@@ -68,10 +68,12 @@ function selectTvNews() {
                 case 0:
                     aNews[0].style.display = "flex";
                     playVideo(0);
+                    addVolume(0);
                     break;
                 case 1:
                     aNews[1].style.display = "flex";
                     playVideo(1);
+                    addVolume(1);
                     break;
                 case 2:
                     aNews[2].style.display = "flex";

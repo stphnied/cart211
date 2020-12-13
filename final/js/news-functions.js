@@ -1,10 +1,14 @@
 "use strict";
 
 const
-    bReturn = d.querySelector(".return-btn");
+    bReturn = d.querySelector(".return-btn"),
+    bAddVol = d.querySelector("#plus-vol"),
+    bSubVol = d.querySelector("#minus-vol");
 
 // Add click event to the return sign
 bReturn.addEventListener("click", returnShop);
+// bAddVol.addEventListener("click",addVolume);
+// bSubVol.addEventListener("click",reduceVolume);
 
 // Functions to return to the shop
 function returnShop() {
@@ -35,4 +39,11 @@ function stopVideo(i) {
     currentVid.pause();
 }
 
+function addVolume(i) {
+    let currentVid = d.querySelectorAll("video")[i];
+    currentVid.volume =0.1;
+}
 
+function reduceVolume() {
+
+}
