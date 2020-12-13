@@ -2,7 +2,7 @@ html {
     width: 100vw;
     height: 100vh;
     text-decoration: none;
-    background:rgb(19, 18, 18);
+    background: rgb(19, 18, 18);
 }
 
 /* ----------------GRID */
@@ -15,8 +15,8 @@ html {
     height: 90vh;
     /* background: rgb(20, 10, 2); */
     display: grid;
-    grid-template-columns: 0.5fr repeat(3,0.5fr) 0.1fr;
-    grid-template-rows: 0.25fr repeat(3,1fr) 0.25fr 0.25fr;
+    grid-template-columns: 0.5fr repeat(3, 0.5fr) 0.1fr;
+    grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr 0.25fr;
     gap: 0px 0px;
 }
 
@@ -57,17 +57,16 @@ html {
     cursor: pointer;
 }
 
-
 /* --- SHOP WINDOW ----------------------------------------*/
 .window_wrap {
     grid-area: 2 / 2 / 6 / 5;
-    z-index:+2;
+    z-index: +2;
     border: 10px solid rgb(8, 5, 1);
     pointer-events: none;
 }
 
 .window_top {
-    background:darkgrey;
+    background: darkgrey;
     grid-area: 1 / 1 / 2 / 6;
     z-index: +2;
 }
@@ -82,7 +81,7 @@ html {
     grid-area: 1/5/6/5;
 }
 
-/* SHOP ---------------------------------------- */
+/* TVS ---------------------------------------- */
 .tvs {
     width: 100%;
     height: 100%;
@@ -92,37 +91,55 @@ html {
     pointer-events: none;
 }
 
-.tvs.active:hover{
-    cursor :pointer;
+.tvs.active:hover {
+    cursor: pointer;
 }
 
 .active {
     pointer-events: all;
 }
 
-.tv-1 {grid-area: 2 / 2 / 3 / 3;}
+.tv-1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
 .tv-1.active {
     background-image: url("../assets/goodnews-01.gif");
     background-size: contain;
     background-position-x: center;
 }
 
-.tv-2 {grid-area: 2 / 3 / 3 / 4;}
-.tv-2.active{
-    background-image : url("../assets/no-signal.gif");
+.tv-2 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.tv-2.active {
+    background-image: url("../assets/no-signal.gif");
     background-size: contain;
 }
 
-.tv-3 {grid-area: 2 / 4 / 3 / 5;}
-.tv-3.active {background-image: url("../assets/goodnews-03.gif");}
-
-.tv-4 {grid-area: 3 / 2 / 4 / 3;}
-.tv-4.active{
-    background-image: url("../assets/atari.JPG");
-    background-size: contain;
+.tv-3 {
+    grid-area: 2 / 4 / 3 / 5;
 }
 
-.tv-5 {grid-area: 3 / 3 / 4 / 4;}
+.tv-3.active {
+    background-image: url("../assets/goodnews-03.gif");
+}
+
+.tv-4 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.tv-4.active {
+    background-image: url("../assets/atari.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tv-5 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
 .tv-5.active {
     background-image: url("../assets/goodnews-02.gif");
 }
@@ -130,21 +147,27 @@ html {
 .tv-6 {
     grid-area: 3 / 4 / 4 / 5;
 }
+
 .tv-6.active {
     grid-area: 3 / 4 / 4 / 5;
-    background-image: url("../assets/tinytoons.jpg");
+    background-image: url("../assets/toons2.gif");
     background-size: contain;
 }
 
-.tv-7 {grid-area: 4 / 2 / 5 / 3;}
+.tv-7 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
 .tv-7.active {
-    background-image: url("../assets/nelson.jpg");
+    background-image: url("../assets/mandela.gif");
     background-size: contain;
+
 }
 
 .tv-8 {
     grid-area: 4 / 3 / 5 / 4;
 }
+
 .tv-8.active {
     background-image: url("../assets/disney.jpg");
     background-size: contain;
@@ -153,12 +176,13 @@ html {
 .tv-9 {
     grid-area: 4 / 4 / 5 / 5;
 }
+
 .tv-9.active {
-    background-image : url("../assets/no-signal.gif");
+    background-image: url("../assets/no-signal.gif");
     background-size: contain;
 }
 
 .table {
-    background-color: rgb(116, 84, 25);
+    background-color: rgb(73, 55, 32);
     grid-area: 5/2/5/5;
 }
