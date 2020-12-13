@@ -1,0 +1,153 @@
+html,* {
+    cursor: url('../img/cursor.png'), auto;
+    letter-spacing : 2px;
+    line-height: 25px;
+}
+
+body {
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    color:#212529;
+    font-family: 'Press Start 2P',cursive;
+    font-size: 16px;
+}
+
+a, a img {
+    text-decoration: none;
+    font-weight: bold;
+    color:#212529;
+    cursor: url('../img/cursor-click.png'), auto;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+li {
+    list-style: none;
+}
+
+.titleText::before {
+    content: '#';
+    color:rgb(59, 121, 255);
+}
+
+
+/*  ---------------- HEADER ----------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    margin-top: 1rem;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+/* menu nav */
+.topnav {
+    overflow: hidden;
+    align-self: flex-end;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:last-child {
+    color: white;
+}
+.topnav a:last-child:hover {
+    color: white;
+}
+
+.topnav a:hover {
+    color: #F1C32E;
+}
+
+.active {
+    background-color: #F1C32E;
+}
+
+/* ---------------- HOME : ABOUT  ----------------*/
+.aboutText {
+    width: 50vw;
+    padding :1.2rem;
+    background: #212529;
+}
+
+.aboutText p {
+    color: white;
+    font-weight: 100;
+}
+
+/* ---------------- HOME :WEEKLY ---------------- */
+img {
+    margin: auto 0;
+}
+
+.followDiv img {
+    height: 30px;
+}
+
+/* ---------------- HOME :GAMES ---------------- */
+.sectGame img {
+    width: 50px;
+}
+
+.sectGame ul {
+    display: flex;
+    align-items: center;
+}
+
+.sectGame a {
+    margin-right :2rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+footer summary {
+    margin: 0 100px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+#proposal {
+    background: black;
+    color: white;
+}
+
+.proposal-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sketch:hover, #moodboard:hover {
+    background: white;
+    padding: 20px;
+}
+
+#proposal ul li{
+    list-style: square;
+}
