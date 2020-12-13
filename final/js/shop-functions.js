@@ -11,7 +11,6 @@ const
     doorSFX = new Audio("assets/sounds/doorbell.mp3"),
     shopSFX = new Audio("assets/sounds/shopAmbience.mp3");
 
-
 // Add click event to the shop's sign
 d.querySelector("#sign").addEventListener("click", shopState);
 
@@ -26,6 +25,10 @@ function shopState() {
         // Sign img closed -> open
         imgSign.src = "assets/sign-open.png";
         imgDoor.src = "assets/door-open.png";
+
+        // Play doorbell sound
+        doorSFX.play();
+        doorSFX.volume = 0.2;
 
         playShopSound();
         selectTvNews();
@@ -68,12 +71,11 @@ function selectTvNews() {
                 case 0:
                     aNews[0].style.display = "flex";
                     playVideo(0);
-                    addVolume(0);
                     break;
                 case 1:
                     aNews[1].style.display = "flex";
                     playVideo(1);
-                    addVolume(1);
+                    // addVolume(1);
                     break;
                 case 2:
                     aNews[2].style.display = "flex";
@@ -112,10 +114,6 @@ function selectTvNews() {
 
 // Plays sounds when the shop is open
 function playShopSound() {
-    // Play doorbell sound
-    doorSFX.play();
-    doorSFX.volume = 0.2;
-
     // Play shop background noises
     shopSFX.load();
     shopSFX.play();

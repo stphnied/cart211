@@ -13,7 +13,6 @@ html {
     margin-top: 2rem;
     width: 90vw;
     height: 90vh;
-    /* background: rgb(20, 10, 2); */
     display: grid;
     grid-template-columns: 0.5fr repeat(3, 0.5fr) 0.1fr;
     grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr 0.25fr;
