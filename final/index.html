@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tune in...</title>
+    <title>Tuning in...</title>
     <!-- CSS files -->
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/shop-style.css">
@@ -12,12 +12,13 @@
 </head>
 
 <body>
+    <!-- Shop section -->
     <section id="shopContainer">
         <!-- door -->
         <div class="door_top door"></div>
         <div class="door_btm door"></div>
-        <img src="assets/door-closed.png" alt="door" class="door_center door" loading=lazy></img>
-        <img src="assets/sign-closed.png" alt="closed sign" id="sign" loading=lazy>
+        <img src="assets/door-closed.png" alt="door" class="door_center door" draggable="false" loading=lazy></img>
+        <img src="assets/sign-closed.png" alt="closed sign" id="sign" draggable="false" loading=lazy>
         <!-- window display -->
 
         <div class="window_wrap"></div>
@@ -38,60 +39,68 @@
         <div class="floor"></div>
     </section>
 
-    <!-- Individual tv-channels -->
+    <!-- Single channel section -->
     <section id="newsContainer">
         <!-- Sign -->
-        <img src="assets/sign-return.png" alt="" class="return-btn" loading=lazy>
+        <img src="assets/sign-return.png" alt="" class="return-btn" draggable="false" loading=lazy>
         <!-- TVs -->
+        <!-- Tv1 -->
         <section class="news recent-news">
             <div>
                 <video src="assets/videos/dog-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv2 -->
         <section class="news recent-news">
             <div>
                 <video src="assets/videos/no-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv3 -->
         <section class="news recent-news">
             <div>
                 <video src="assets/videos/blm-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv4 -->
         <section class="news old-news">
             <div>
                 <video src="assets/videos/atari-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv5 -->
         <section class="news recent-news">
             <div>
                 <video src="assets/videos/plastic-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv6 -->
         <section class="news old-news">
             <div>
                 <video src="assets/videos/toons-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv7 -->
         <section class="news old-news">
             <div>
                 <video src="assets/videos/nelson-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv8 -->
         <section class="news old-news">
             <div>
                 <video src="assets/videos/disney-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
+        <!-- Tv9 -->
         <section class="news old-news">
             <div>
                 <video src="assets/videos/no-news.mp4" type="video/mp4"  preload="none"></video>
             </div>
         </section>
-            <h2>VOLUME</h2>
         <!-- Volume buttons -->
+            <h2>VOLUME</h2>
         <div class="volume-buttons">
-
             <button type="button" id="plus-vol">
                 +
             </button>
