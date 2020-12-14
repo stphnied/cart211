@@ -22,6 +22,7 @@
 
 .return-btn:hover {
     cursor: pointer;
+    animation: shake 2s ease infinite;
 }
 h2 {
     font-family: Helvetica;
@@ -44,10 +45,11 @@ button {
     width: 5rem;
     height: 3.5rem;
     opacity: 0.5;
+    animation: popUp 1s ease;
 }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* RELATED TO BOTH TYPE OF NEWS */
@@ -97,3 +99,6 @@ button:hover {
     margin-left: 3.5rem;
 }
 
+video{
+    animation: tvAppear 0.5s ease-in 0s;
+}

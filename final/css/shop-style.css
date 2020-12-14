@@ -46,6 +46,7 @@ html {
 /* --- SHOP SIGN ---------------------------------------- */
 #sign {
     position: absolute;
+    transform-origin: top center;
     width: 7rem;
     left: 13%;
     bottom: 45%;
@@ -54,6 +55,7 @@ html {
 
 #sign:hover {
     cursor: pointer;
+    animation: shake 2s ease infinite;
 }
 
 /* --- SHOP WINDOW ----------------------------------------*/
