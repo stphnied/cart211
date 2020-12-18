@@ -1,0 +1,61 @@
+.special {
+    color: blue;
+}
+
+/* #thebunny {
+    position: absolute;
+} */
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexelem {
+    position: relative;
+    color: white;
+    background: rgb(108, 255, 108);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.flexelem:hover {
+    background: rgb(241, 255, 38);
+    ;
+}
+
+div.dropdown {
+    display: flex;
+    justify-content: space-between;
+    background: pink;
+    z-index: 1;
+}
+
+li.drop-item {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+li.drop-item:hover {
+    color: white;
+}
+
+li.drop-item:hover ul.drop-list {
+    color:red;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.drop-list {
+    display: none;
+    position: absolute;
+    left: -30px;
+    z-index: 1;
+}
+

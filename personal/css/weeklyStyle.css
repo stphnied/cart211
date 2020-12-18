@@ -1,18 +1,18 @@
 /*  ---------------- HEADER ----------------*/
-.topnav a:last-child {
+.topnav a {
     color: black;
+}
+
+.topnav a:nth-of-type(2) {
+    color:white;
 }
 
 .topnav a:last-child:hover {
     color: #F1C32E;
 }
 
-.topnav a:first-child {
-    color: white;
-}
-
-.topnav a:first-child:hover {
-    color: white;
+.topnav a:last-child {
+    color: black;
 }
 
 /*  ---------------- SECTION ----------------*/

@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tutorial Exerices!</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tutorialStyle.css">
 </head>
+
 <body onload="onLoad()">
     <h1 id="myId">Tutorial</h1>
+    <div class="dropdown">
+        <div class="logo">
+            <img src="img/github.png" alt="" width=50>
+        </div>
+        <ul class="menu">
+            <li class="drop-item">hi
+                <ul class="drop-list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </li>
+            <li class="drop-item">hello
+            </li>
+            <li class="drop-item">bonjour
+                <ul class="drop-list">
+            </li>
+        </ul>
+    </div>
     <hr>
     <button id="myBtn" onClick="myFunction()">Click me!</button>
     <p id="disappear">Hello I am going to disappear!</p>
     <img src="img/pixelSteph.png" alt="" srcset="" id="thegirl">
-    <img src="img/dinotubbies.png" alt="" id="thedino" onmousedown="drag()" onmouseup="drop()">
+    <img src="img/dinotubbies.png" alt="" id="thedino" onmousedown="drag()" onmouseup="drop()" width=150>
+    <img src="img/cinnabun.png" alt="" id="thebunny">
+
+
+
+
+    <div class="textbox" id="disappear">
+        <p>This is a paragraph</p>
+        <p>and another <span class="special">one</span></p>
+    </div>
+
+    <div class="flexbox">
+        <div class="flexelem">1</div>
+        <div class="flexelem">2</div>
+        <div class="flexelem">3</div>
+        <div class="flexelem">4</div>
+    </div>
 </body>
 <script src="js/tutorialScript.js"></script>
+
 </html>
